@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WikiTube</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <script src="https://kit.fontawesome.com/64c9fbe692.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+</head>
+
+<body onload="init()">
+
+    <div class="backdrop hidden"></div>
+
+
+
+    <h1 class="header"><img class="logo" src="img/logo.png" alt=""></i>WikiTube</h1>
+    <img class="loader hidden" src="loader/Spin@2x-1.0s-200px-200px.svg" alt="">
+    <div class="screen">
+
+
+
+
+        <div class="main-screen">
+            <div class="search-container">
+                <label for="search"></label>
+                <input class="search-input" type="search" placeholder="Search">
+                <button class="btn search" onclick="onSearch()">Search</button>
+            </div>
+
+            <iframe class="video" width="400" height="300" src="">
+            </iframe>
+
+            <div class="text-container">
+                <div class="video-description">
+                    <h2>bla bla</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, sunt asperiores vel beatae
+                        consequuntur laudantium porro tenetur eveniet esse ea aliquid maxime voluptatibus aliquam fugiat
+                        dolore ad ipsa cum expedita?</p>
+                </div>
+
+                <div class="wiki-value">
+                    <h2><i class="fa-brands fa-wikipedia-w" style="padding: 5px;"></i>bla bla</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, sunt asperiores vel beatae
+                        consequuntur laudantium porro tenetur eveniet esse ea aliquid maxime voluptatibus aliquam fugiat
+                        dolore ad ipsa cum expedita?</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="user-interface">
+
+
+            <ul class="videos-container">
+                <li class="video-card">
+                    <img src="img/video.png" alt="">
+                    <h2>title</h2>
+
+                </li>
+
+                <li class="video-card">
+                    <img src="img/video.png" alt="">
+                    <h2>title</h2>
+
+                </li>
+                <li class="video-card">
+                    <img src="img/video.png" alt="">
+                    <h2>title</h2>
+
+                </li>
+
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- AIzaSyD6_dPEXi9GqT4WJ4FDa0Qme3uUzYOIwfU -->
+
+
+    <script src="lib/axios.js"></script>
+    <script src="lib/swal.js"></script>
+    <script src="js/lib/JQuery/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/wikitube-service.js"></script>
+    <script src="js/wikipedia-service.js"></script>
+    <script src="js/wikitube-controller.js"></script>
+</body>
+
+</html>
